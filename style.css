@@ -49,6 +49,14 @@ body{
 }
 
 
+#get_value{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
 
 header{
     color: rgb(152, 235, 29);
@@ -169,7 +177,6 @@ header h1{
     border: solid 3px rgb(42, 6, 173);
     border-radius: 30px;
     background-color: rgb(218, 198, 24);
-    overflow: hidden;
 }
 
 #model_but:hover{
