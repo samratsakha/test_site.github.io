@@ -169,7 +169,9 @@ header h1{
     height: 40px;
     width: 100px;
     border: solid 3px rgb(42, 6, 173);
-    border-radius: 30px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
     background-color: rgb(218, 198, 24);
 }
 
