@@ -164,11 +164,11 @@ header h1{
 
 #model_but{
     font-weight: bolder;
-    height: 80px;
-    width: 200px;
+    height: 40px;
+    width: 100px;
     border: solid 3px rgb(42, 6, 173);
     border-radius: 30px;
-    padding: 0%;
+    padding: -10%;
     background-color: rgb(218, 198, 24);
 }
 
