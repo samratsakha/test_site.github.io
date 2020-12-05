@@ -149,9 +149,8 @@ header h1{
     width: 100px;
     font-weight: bolder;
     border: solid 3px rgb(149, 223, 12);
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
+    border-radius: 30px;
+    padding: 0;
     background-color: rgb(129, 106, 106);
 }
 
@@ -166,12 +165,11 @@ header h1{
 
 #model_but{
     font-weight: bolder;
-    -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  border: solid 3px rgb(42, 6, 173);
-  height: 40px;
+    height: 40px;
     width: 100px;
+    border: solid 3px rgb(42, 6, 173);
+    border-radius: 30px;
+    background-color: rgb(218, 198, 24);
 }
 
 #model_but:hover{
