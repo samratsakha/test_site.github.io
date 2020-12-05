@@ -167,7 +167,9 @@ header h1{
     height: 40px;
     width: 100px;
     border: solid 3px rgb(42, 6, 173);
+    border-radius: 30px;
     background-color: rgb(218, 198, 24);
+    overflow: hidden;
 }
 
 #model_but:hover{
