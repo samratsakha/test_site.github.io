@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>iPhone Resales Corner</title>
+</head>
+
+<body>
+
+    
+
+    <div class="main-content">
+
+        <header class="header">
+            <h1>iPhone Resales Corner</h1><br>
+        </header>
+
+
+        <form action="{{ url_for('predict')}}" method="post">
+
+
+            <div class="div_1">
+
+            <div class="model_div">
+            <h3>Model</h3><br>
+            <select name="model_mob" id="model_but" required="required">
+                <option value="4">4</option>
+                <option value="4S">4S</option>
+                <option value="5">5</option>
+                <option value="5S">5S</option>
+                <option value="5C">5C</option>
+
+                <option value="SE">SE</option>
+                <option value="6">6</option>
+                <option value="6S">6S</option>
+                <option value="6PLUS">6PLUS</option>
+                <option value="6SPLUS">6SPLUS</option>
+
+                <option value="7">7</option>
+                <option value="7PLUS">7PLUS</option>
+                <option value="8">8</option>
+                <option value="8PLUS">8PLUS</option>
+                <option value="X">X</option>
+
+                <option value="XS">XS</option>
+                <option value="XSMAX">XSMAX</option>
+                <option value="XR">XR</option>
+                <option value="SE2020">SE2020</option>
+                <option value="11">11</option>
+                <option value="11PRO">11PRO</option>
+
+
+                <option value="11PROMAX">11PROMAX</option>
+                <option value="12">12</option>
+                <option value="12MINI">12MINI</option>
+                <option value="12PRO">12PRO</option>
+                <option value="12PROMAX">12PROMAX</option>
+
+            
+            </select>
+            </div>
+
+            <div class="variant_div">
+            <h3>Variant</h3><br>
+            <select name="variant" id="variant_but" required="required">
+                <option value="16">16</option>
+                <option value="32">32</option>
+                <option value="64">64</option>
+
+                <option value="128">128</option>
+                <option value="256">256</option>
+                <option value="512">512</option>
+            </select>
+            </div>
+
+            
+            </div>
+
+            <div class="div_2">
+
+            <div class="pd">
+            <h3>Physical Damage</h3><br>
+            <select name="physical_damage" id="pd_but" required="required">
+                <option value="NO">NO</option>
+                <option value="YES">YES</option>
+            </select><br>
+            </div>
+
+            <div class="sd">
+            <h3>Software Issues</h3><br>
+            <select name="software_issues" id="sd_but"  required="required">
+                <option value="NO">NO</option>
+                <option value="YES">YES</option>
+            </select><br>
+            </div>
+
+            <div class="hd">
+            <h3>Hardware Issues</h3><br>
+            <select name="hardware_issues"  id="hd_but" required="required">
+                <option value="NO">NO</option>
+                <option value="YES">YES</option>
+            </select><br>
+            </div>
+
+            </div>
+
+            <div class="div_3">
+
+            <div class="bt">
+            <h3>Battery Health</h3><br>
+            <select name="battery" id="bt_but"  required="required">
+                <option value="85">91-100</option>
+                <option value="80">80-90</option>
+                <option value="70">70-79</option>
+            </select><br>
+            </div>
+
+            <div class="kt">
+            <h3>Kit available or not</h3><br>
+            <select name="kit"  id="kt_but" required="required">
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+            </select><br>
+            </div>
+
+            </div>
+
+            <div class="div_4">
+            <br><br><button id="sub" type="submit ">Calculate</button>
+            <br><br><br>
+            </div>
+
+
+
+        </form>
+
+
+
+        <div class="div_5">
+        <br><br><h3>{{ prediction_text }}<h3>
+        </div>
+
+        <br><br>
+
+    </div>
+
+
+    <div class="note">
+        <br><br><h3>How to Use</h3><br><br>
+
+        <h4>Model</h4><br>
+        <h5>Select your Apple iPhone Model from the list</h5><br><br>
+
+        <h4>Variant</h4><br>
+        <h5>Select your Apple iPhone variant from the list</h5><br><br>
+
+        <h4>Physical Damage</h4><br>
+        <h5>Select Yes if your iPhone has any Physical Damages </h5><br>
+        <h5>other than negligible scratches and dents</h5><br>
+        <h5>Example: Screen damage/Touch Cracks</h5><br><br>
+  
+
+        <h4>Software Issues</h4><br>
+        <h5>Select Yes if your iPhone has any Software Issues </h5><br>
+        <h5>Example: Call Network problems/Phone not Starting</h5><br><br>
+
+
+        <h4>Harware Damage</h4><br>
+        <h5>Select Yes if your iPhone has any Hardware Issues </h5><br>
+        <h5>Example: Touch ID/Face ID not working</h5><br><br>
+
+        <h4>Battery health</h4><br>
+        <h5>Select Battery Health of ur iPhone</h5><br>
+        <h5>Settings -> Battery -> Battery Health</h5><br><br>
+
+
+        <h4>Kit Available or not</h4><br>
+        <h5>Select Yes if you are having your iPhone's Kit or else No</h5><br>
+        <h5>Kit includes -> iPhone's Box,Lightining Cable,Adapter,Earphones</h5><br><br>
+
+
+        <h4>Click on the Calculate Button to get the Resale Value</h4><br>
+        <h4>Of your iPhone</h4><br><br>
+
+        <h3>Note:-</h3><br>
+        <h4>If you choose Variants of iPhone which were never</h4><br>
+        <h4>in production you will get price of lowest variant available</h4><br>
+        <h4>Example:- 7PLUS 16GB variant doesn't exist</h4><br>
+        <h4>So you will get the price of 7PLUS 32GB</h4><br><br>
+
+
+    </div>
+
+
+    <footer class="foot">
+        <br>
+            <h2>© iPhone Resales Corner 2020 All Rights Reserved</h2><br>
+            <h3>Contact - samratsakha54@gmail.com</h3><br>
+    </footer>
+
+
+</body>
+
+</html>
