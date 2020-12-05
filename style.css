@@ -166,12 +166,12 @@ header h1{
 
 #model_but{
     font-weight: bolder;
-    height: 40px;
-    width: 100px;
-    border: solid 3px rgb(42, 6, 173);
     -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border: solid 3px rgb(42, 6, 173);
+  height: 40px;
+    width: 100px;
     background-color: rgb(218, 198, 24);
 }
 
