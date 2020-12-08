@@ -14,7 +14,7 @@
 
     
 
-    <div class="main-content">
+    <div class="main-content" id="apple_1">
 
         <header class="header">
             <h1 id="platform">iPhone Resales Corner</h1><br>
@@ -513,6 +513,17 @@ header h1{
 
 
 
+#apple_model_but{
+    font-weight: bolder;
+    height: 40px;
+    width: 100px;
+    border: solid 3px rgb(42, 6, 173);
+    border-radius: 30px;
+    background-color: rgb(218, 198, 24);
+}
+
+
+
 
 @media only screen and (max-width:400px){
     .div_1{
@@ -534,14 +545,7 @@ header h1{
 
 
     if(navigator.userAgent.match(/iPhone/i)){
-        document.getElementById("model_but").style.borderRadius="0px";
-        document.getElementById("variant_but").style.borderRadius="0px";
-        document.getElementById("pd_but").style.borderRadius="0px";
-        document.getElementById("sd_but").style.borderRadius="0px";
-        document.getElementById("hd_but").style.borderRadius="0px";
-        document.getElementById("bt_but").style.borderRadius="0px";
-        document.getElementById("kt_but").style.borderRadius="0px";
-
+       document.getElementById("model_but").id="apple_model_but";
 
 
     }
