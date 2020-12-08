@@ -33,7 +33,7 @@
 
             <div class="model_div">
             <h3>Model</h3><br>
-            <select name="model_mob" id="model_but" required="required">
+            <select name="model_mob" id="model_but" required="required" onclick="change_variants()">
                 <option value="4">4</option>
                 <option value="4S">4S</option>
                 <option value="5">5</option>
@@ -72,14 +72,14 @@
 
             <div class="variant_div">
             <h3>Variant</h3><br>
-            <select name="variant" id="variant_but" required="required">
-                <option value="16">16</option>
-                <option value="32">32</option>
-                <option value="64">64</option>
+            <select name="variant" id="variant_but" required="required" >
+                <option value="16" id="16GB">16</option>
+                <option value="32" id="32GB">32</option>
+                <option value="64" id="64GB">64</option>
 
-                <option value="128">128</option>
-                <option value="256">256</option>
-                <option value="512">512</option>
+                <option value="128" id="128GB">128</option>
+                <option value="256" id="256GB">256</option>
+                <option value="512" id="512GB">512</option>
             </select>
             </div>
 
@@ -569,11 +569,22 @@ header h1{
        document.getElementById("apple_default").id="apple_1";
        document.getElementById("apple_default_2").id="apple_2";
 
-
-
     }
-    else if(navigator.userAgent.match(/iPad/i)){
-        
+
+    var mod="";
+
+    function change_variants(){
+
+           mod=document.getElementById("model_but").value;
+
+
+           document.getElementById("16GB").style.display="block";
+
+           if(mod=='X'){
+              document.getElementById("16GB").style.display="none";
+           }
+
+
     }
 
 
