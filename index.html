@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iPhone Resales Corner</title>
 </head>
@@ -14,7 +13,7 @@
 
     
 
-    <div class="main-content" id="apple_1">
+    <div class="main-content" id="apple_default">
 
         <header class="header">
             <h1 id="platform">iPhone Resales Corner</h1><br>
@@ -154,7 +153,7 @@
     </div>
 
 
-    <div class="note">
+    <div class="note" id="apple_2">
         <br><br><h3 style="color: greenyellow;">How to get exact resale value..?</h3><br><br>
 
         <h4>Model</h4><br>
@@ -274,7 +273,7 @@ body{
 header{
     color: rgb(152, 235, 29);
     background-color: rgba(0, 0, 0, 0.4);
-    font-family: 'East Sea Dokdo', cursive;
+    font-family: 'Nerko One', cursive;
     font-size: xx-large;
     display: flex;
     justify-content: center;
@@ -514,6 +513,17 @@ header h1{
 /*   FOR APPLE USERS    */
 
 
+#apple_1{
+    background: url("https://wallpapercave.com/wp/wp2679462.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+
+
 #apple_model_but{
     font-weight: bolder;
     height: 40px;
@@ -525,6 +535,10 @@ header h1{
 
 
 
+
+
+
+/*   FOR MOBILE USERS    */
 
 @media only screen and (max-width:400px){
     .div_1{
@@ -547,6 +561,16 @@ header h1{
 
     if(navigator.userAgent.match(/iPhone/i)){
        document.getElementById("model_but").id="apple_model_but";
+       document.getElementById("variant_but").id="apple_variant_but";
+       document.getElementById("pd_but").id="apple_pd_but";
+       document.getElementById("sd_but").id="apple_sd_but";
+       document.getElementById("hd_but").id="apple_hd_but";
+       document.getElementById("bt_but").id="apple_bt_but";
+       document.getElementById("kt_but").id="apple_kt_but";
+
+
+       document.getElementById("apple_default").id="apple_1";
+
 
 
     }
