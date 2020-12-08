@@ -17,7 +17,7 @@
     <div class="main-content">
 
         <header class="header">
-            <h1>iPhone Resales Corner</h1><br>
+            <h1 id="platform">iPhone Resales Corner</h1><br>
         </header>
 
 
@@ -527,5 +527,23 @@ header h1{
 }
 
 </style>
+
+
+
+<script type="text/javascript"> 
+
+
+    if(navigator.userAgent.match(/iPhone/i)){
+        document.getElementById("platform").style.color="yellow";
+    }
+    else{
+        document.getElementById("platform").style.color="blue";
+    }
+
+
+</script>
+
+
+
 
 </html>
