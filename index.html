@@ -73,7 +73,8 @@
             <div class="variant_div">
             <h3>Variant</h3><br>
             <select name="variant" id="variant_but" class="get_val_2" required="required" >
-                <option value="16">16</option>
+                <option value="16">16 GB</option>
+                <option value="32">32 GB</option>
             </select>
             </div>
 
@@ -576,11 +577,45 @@ header h1{
             s2[0].remove(s2[0].i);
         }
 
-        if(s1[0].value=="7PLUS"){
-            var array=["32 | 32","128 | 128","256 | 256"];
-        }
+    
+        // iphone 4
         if(s1[0].value=="4"){
-            var array=["16 | 16"];
+            var array=["16 | 16 GB","32 | 32GB"];
+        }
+
+        // iphone 4s 5 5s 5c
+        if(s1[0].value=="4S"  || s1[0].value=="5"  ||  s1[0].value=="5S"  ||  s1[0].value=="5C" ){
+            var array=[ "16 | 16 GB"  , "32 | 32 GB" , "64 | 64 GB" ];
+        }
+
+        // iphone se 6 6s 6plus 6splus
+        if(s1[0].value=="SE"  || s1[0].value=="6"  ||  s1[0].value=="6S"  ||  s1[0].value=="6PLUS"  || s1[0].value=="6SPLUS" ){
+            var array=[ "16 | 16 GB"  , "32 | 32 GB" , "64 | 64 GB" , "128 | 128 GB" ];
+        }
+
+        // iphone 7 and 7plus
+        if(s1[0].value=="7"  || s1[0].value=="7PLUS" ){
+            var array=[ "32 | 32 GB"  , "128 | 128 GB" , "256 | 256 GB" ];
+        }
+
+        // iphone 8  8plus x
+        if(s1[0].value=="8"  || s1[0].value=="8PLUS" || s1[0].value=="X"){
+            var array=[ "64 | 64 GB"  , "256 | 256 GB"  ];
+        }
+
+        // iphone xs xsmax 11pro 11promax
+        if(s1[0].value=="XS"  || s1[0].value=="XSMAX" || s1[0].value=="11PRO" || s1[0].value=="11PROMAX" ){
+            var array=[ "64 | 64 GB"  , "256 | 256 GB" , "512 | 512 GB" ];
+        }
+
+        // iphone xr 11 12 12mini se2020
+        if(s1[0].value=="XR"  || s1[0].value=="11" || s1[0].value=="12" || s1[0].value=="12MINI" || s1[0].value=="SE2020" ){
+            var array=[ "64 | 64 GB"  , "128 | 128 GB" , "256 | 256 GB" ];
+        }
+
+        // iphone 12pro and 12promax
+        if(s1[0].value=="12PRO"  || s1[0].value=="12PROMAX" ){
+            var array=[ "128 | 128 GB"  , "256 | 256 GB" , "512 | 512 GB" ];
         }
 
         for(var option in array){
