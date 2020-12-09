@@ -72,14 +72,8 @@
 
             <div class="variant_div">
             <h3>Variant</h3><br>
-            <select name="variant" id="variant_but" required="required" >
-                <option value="16" id="16GB">16</option>
-                <option value="32" id="32GB">32</option>
-                <option value="64" id="64GB">64</option>
-
-                <option value="128" id="128GB">128</option>
-                <option value="256" id="256GB">256</option>
-                <option value="512" id="512GB">512</option>
+            <select name="variant" id="variant_but" class="get_val_2" required="required" >
+                <option value="16">16</option>
             </select>
             </div>
 
@@ -575,16 +569,29 @@ header h1{
 
     function change_variants(){
 
-           mod=document.getElementsByClassName("get_val");
+        var s1=document.getElementsByClassName("get_val");
+        var s2=document.getElementsByClassName("get_val_2");
 
-           alert(mod[0].value);
+        for(var i=s2[0].length-1;i>=0;i--){
+            s2[0].remove(s2[0].i);
+        }
 
-           document.getElementById("16GB").style.display="block";
+        if(s1[0].value=="7PLUS"){
+            var array=["32 | 32","128 | 128","256 | 256"];
+        }
+        if(s1[0].value=="4"){
+            var array=["16 | 16"];
+        }
 
-           if(mod[0].value=='X'){
-              document.getElementById("16GB").style.display="none";
-           }
+        for(var option in array){
+            var pair = array[option].split("|");
+            var newOption = document.createElement("option");
 
+            newOption.value = pair[0];
+            newOption.innerHTML = pair[1];
+
+            s2[0].options.add(newOption);
+        }
 
     }
 
