@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-1">
+        <meta name="viewport" content="width=device-width , initial-scale = 1.0" >
+        <link rel="stylesheet" href="css/quiz-reattend.css">
+        <script>
+
+            document.addEventListener("DOMContentLoaded", function() {
+            pass_2=localStorage.getItem("student_name");
+            document.getElementById("qiuz_header").innerHTML="QuizzieMania - Sorry "+pass_2;
+            });
+
+            document.addEventListener('contextmenu',function(e) {
+                e.preventDefault();
+            });
+            
+        </script>
+        <title>QuizzieMania - Sorry !</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 id="qiuz_header"><img id="imgs" src="image/logo.gif">QuizzieMania - Sorry !</h1>
+        </header>
+
+
+       <div class="main-content">
+           <img src="image/oops.gif"> 
+           <img src="image/oops.gif"> 
+           <img src="image/oops.gif"> 
+           <img src="image/oops.gif"> 
+           <img src="image/oops.gif"> 
+       </div>
+
+        <audio id="aud">
+            <source src="sound/alert.mp3" type="audio/mpeg">
+        </audio>
+
+
+        <footer class="footer">
+            <h2 id="quiz_footer" >Better Luck Next Time</h2>
+            <h3 id="quiz_footer" >We believe you will pass on the next attempt</h3>
+        </footer>
+    </body>
+</html>

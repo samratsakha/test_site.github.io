@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-1">
+        <meta name="viewport" content="width=device-width , initial-scale = 1.0" >
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript">
+            window.history.forward();
+            function noBack()
+            {
+                window.history.forward();
+            }
+        </script>
+        <script src="javascript/javascriptmain.js" ></script>
+        <title>SignIn - QuizzieMania</title>
+    </head>
+    <body onLoad="noBack();" onpageshow="if (event.persisted) noBack();" onUnload="">
+        <header class="header">
+            <h1 id="qiuz_header"><img id="imgs" src="image/logo.gif">QuizzieMania</h1>
+        </header>
+
+        <div class="main-content">
+        <h2 class="body_texts">Welcome to QuizzieMania !</h2><br>
+        <h2 class="body_texts">Enter your E-mail and Password to Attend the Quiz</h2><br>
+        <h3 class="body_fill">Email : <input id="email" placeholder="Enter your E-mail id" type="email"></h3><br>
+        <h3 class="body_fill" >Password : <input id="password" placeholder="Enter your Password" type="password"></h3><br> <br>
+        <button class="body_fill" id="accept" onclick="start_quiz()" >Attend Quiz</button>
+        </div>
+        
+
+        <audio id="aud">
+            <source src="sound/alert.mp3" type="audio/mpeg">
+        </audio>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <footer class="footer">
+            <h2 id="quiz_footer" >Score more than 75% and get a Valuable Certificate.</h2>
+        </footer>
+    </body>
+</html>

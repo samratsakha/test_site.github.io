@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-1">
+        <meta name="viewport" content="width=device-width , initial-scale = 1.0" >
+        <link rel="stylesheet" href="css/style-quiz.css">
+        <script type="text/javascript">
+            window.history.forward();
+            function noBack()
+            {
+                window.history.forward();
+            }
+        </script>
+        <script src="javascript/javascript-quiz.js" ></script>
+        <title>QuizzieMania - Quizes</title>
+    </head>
+    <body onLoad="noBack();" onpageshow="if (event.persisted) noBack();" onUnload="">
+        <header class="header">
+            <h1 id="qiuz_header"><img id="imgs" src="image/logo.gif">You are live - QuizzieMania</h1>
+        </header>
+
+
+        <div class="main-content">
+            <h1 id="ready">You are ready to take the Quiz</h1><br><br>
+            
+                <h2 class="confirm">Confirm the details</h2><br><br>
+                <h3 class="name">Enter your Name : 
+                    <input id="studname" class="name" type="text" placeholder="Enter your name">
+                </h3>
+                <br><br>
+                <h3 class="college">Enter your College/School Name : 
+                    <input id="clgname" class="college" type="text" placeholder="Enter your Institution">
+                </h3>
+                <br><br>
+                <h3>
+                    <a href="#" class="anc" id="apt" onclick="accepted()"><input class="check" id="cheq" type="checkbox" >You have accepted our terms and conditions</input></a>
+                </h3>
+                <br>
+                <h4 id="h11">Email will be diplayed here</h4><br>
+                <br>
+                <br>
+                <button class="btn" id="btn-start" onclick="start()" >Start the Quiz</button>
+           
+            
+        </div>
+
+        <audio id="aud">
+            <source src="sound/alert.mp3" type="audio/mpeg">
+        </audio>
+
+
+        <footer class="footer">
+            <h2 id="quiz_footer" >Attend the quiz and get a Valuable Certificate.</h2>
+            <h3 id="quiz_footer" >You are One step back to attend the Quiz.</h3>
+        </footer>
+    </body>
+</html>
