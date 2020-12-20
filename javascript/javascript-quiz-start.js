@@ -12,6 +12,8 @@ var real_sec;
 
 var time_switch_before,time_switch_back,total_time;
 
+var acct=0;
+
 
 
 // Local Storage Configuration
@@ -29,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
 window.addEventListener('keydown', (event) => {
     if(event.key){
         keypress++;
-        if(keypress==3){
+        if(keypress==100){
             end=1;
             keypress=0;
             localStorage.setItem("keypress",keypress);
@@ -45,6 +47,14 @@ document.addEventListener('contextmenu',function(e) {
     e.preventDefault();
 });
 
+
+// Cut and Copy Configuration
+document.addEventListener('copy',function(e) {
+    e.preventDefault();
+});
+document.addEventListener('cut',function(e) {
+    e.preventDefault();
+});
 
 
 // Tab switching Configuration
@@ -63,7 +73,7 @@ document.addEventListener("visibilitychange",function (){
         }
         tab++;
         localStorage.setItem("time_start",tab);
-        if(tab==3){
+        if(tab==100){
             end=1;
             tab=0;
             localStorage.setItem("time_start",tab);
@@ -153,6 +163,18 @@ function func(){
         alert("Accept the above Condition");
     }
     mark=0;
+}
+
+// Terms and conditions Checked state
+function accepted(){
+    if(acct==0){
+        document.getElementById("cheq").checked=true;
+        acct=1;
+    }
+    else{
+        document.getElementById("cheq").checked=false;
+        acct=0;
+    }
 }
 
 // Page Reload Configuration

@@ -4,14 +4,14 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgb(248, 248, 248);
 }
 
 .header{
     display: flex;
     flex-direction: column;
-    background-color: grey;
-    height: 100px;
+    background-color: rgb(10, 152, 247);
+    height: 105px;
     justify-content: center;
     align-items: center;
     position: sticky;
@@ -21,7 +21,7 @@ body{
 .footer{
     display: flex;
     flex-direction: column;
-    background-color: brown;
+    background-color: rgb(79, 148, 252);
     height: 75px;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@ body{
 
 
 .main-content{
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     padding-top: 4%;
@@ -57,7 +57,7 @@ body{
 }
 
 .main-content span{
-    color: green;
+    color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     padding: 5%;
@@ -93,6 +93,7 @@ body{
     margin-left: 10%;
     margin-bottom: 2%;
     color: green;
+    font-weight: bolder;
 }
 
 .check{
@@ -100,14 +101,24 @@ body{
     width: 15px;
 }
 
+#apt:hover{
+    cursor: pointer;
+}
+
+input[type=radio] {
+    height: 15px;
+    width: 15px;
+}
+
+
 
 
 @media only screen and (max-width:500px){
     .header{
         display: flex;
         flex-direction: column;
-        background-color: grey;
-        height: 120px;
+        background-color:rgb(10, 152, 247);
+        height: 140px;
         justify-content: center;
         align-items: center;
         position: sticky;
@@ -116,7 +127,7 @@ body{
     .footer{
         display: flex;
         flex-direction: column;
-        background-color: brown;
+        background-color: rgb(79, 148, 252);
         height: 100px;
         justify-content: center;
         align-items: center;

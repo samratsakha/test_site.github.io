@@ -14,7 +14,7 @@ body{
 
 .header{
     display: flex;
-    background-color: grey;
+    background-color:  rgb(10, 152, 247);
     height: 100px;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,7 @@ body{
 .footer{
     display: flex;
     flex-direction: column;
-    background-color: brown;
+    background-color: rgb(79, 148, 252);
     height: 100px;
     justify-content: center;
     align-items: center;
