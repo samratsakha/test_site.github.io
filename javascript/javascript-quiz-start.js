@@ -14,12 +14,27 @@ var time_switch_before,time_switch_back,total_time;
 
 var acct=0;
 
+var started;    
+
+var resizing;
+
+var h,w;
 
 
 // Local Storage Configuration
 document.addEventListener("DOMContentLoaded", function() {
+    started=localStorage.getItem("started");
+    if(started!=0){
+        end=1;
+        //window.open("quiz-entry.html","_self");
+    }
+    else{
+        started=1;
+        localStorage.setItem("started",started);
+    }
     pass_2=localStorage.getItem("student_name");
     tab=localStorage.getItem("time_start");
+    resizing=tab;
     real_sec=localStorage.getItem("clock");
     keypress=localStorage.getItem("keypress");
     document.getElementById("general").innerHTML=" General Quiz - "+pass_2;
@@ -31,14 +46,18 @@ document.addEventListener("DOMContentLoaded", function() {
 window.addEventListener('keydown', (event) => {
     if(event.key){
         keypress++;
-        if(keypress==100){
+        if(keypress==3){
             end=1;
             keypress=0;
             localStorage.setItem("keypress",keypress);
             window.open("quiz-reattend.html","_self","toolbar=no");
         }
         localStorage.setItem("keypress",keypress);
-        alert("Don't use Keyboard");
+        document.getElementsByTagName("BODY")[0].style.display = "none";
+        setTimeout(function(){
+            alert("Don't use Keyboard");
+            document.getElementsByTagName("BODY")[0].style.display = "block";
+        }, 100);
     }
 });
 
@@ -73,7 +92,7 @@ document.addEventListener("visibilitychange",function (){
         }
         tab++;
         localStorage.setItem("time_start",tab);
-        if(tab==100){
+        if(tab==3){
             end=1;
             tab=0;
             localStorage.setItem("time_start",tab);
@@ -85,6 +104,35 @@ document.addEventListener("visibilitychange",function (){
     }
     
 });
+
+
+// Window Resized
+h=screen.availHeight;
+w=screen.availWidth;
+if(w>=500 || !(userAgentString.indexOf("Safari") > -1)){
+function resized(){
+    document.getElementsByTagName("BODY")[0].style.display = "none";
+    setTimeout(function(){
+        alert("Don't resize the window");
+        document.getElementsByTagName("BODY")[0].style.display = "block";
+    }, 100);
+    resizing++;
+    if(resizing==200){
+            end=1;
+            resizing=0;
+            localStorage.setItem("resizing",resizing);
+            window.open("quiz-reattend.html","_self","toolbar=no");
+    }
+    localStorage.setItem("resizing",resizing);
+}
+}
+else{
+    function resized(){
+        alert("wohooo");
+    }
+}
+
+window.onresize = resized;
 
 
 //Timer Settings Configuration

@@ -7,6 +7,8 @@ var user,seconds=1200;
 
 var acct=0;
 
+var started;
+
 document.addEventListener("DOMContentLoaded", function() {
 var pass=localStorage.getItem("email_id");
 user=localStorage.getItem("user_attempt");
@@ -14,6 +16,12 @@ if(user>=1){
     document.getElementById("btn-start").style.visibility="hidden";
     document.getElementById("ready").innerHTML="You have already taken the Quiz";
     alert("You have already attempted the Quiz");
+    started=1;
+    localStorage.setItem("started",started);
+}
+else{
+    started=0;
+    localStorage.setItem("started",started);
 }
 user++;
 localStorage.setItem("user_attempt",user);
@@ -83,7 +91,7 @@ function start(){
     if(count==3){
         end=1;
         document.getElementById("btn-start").style.visibility="hidden";
-        window.open("quiz-start.html","","toolbar=no");
+        window.open("quiz-start.html","newWin", "width="+screen.availWidth+",height="+screen.availHeight);
     }
     count=0;
 }

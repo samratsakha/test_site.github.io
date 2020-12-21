@@ -1,47 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-1">
-        <meta name="viewport" content="width=device-width , initial-scale = 1.0" >
-        <link rel="stylesheet" href="css/quiz-signup.css">
-        <script type="text/javascript">
-            function func(){
-                window.open("quiz-signup.html","_self");
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-quiz-start.css">
+    <script type="text/javascript">
+        window.history.forward();
+        function noBack()
+        {
+            window.history.forward();
+        }
+    </script>
+    <title>QuizzieMania-Live</title>
+</head>
+<body onLoad="noBack();" onpageshow="if (event.persisted) noBack();" onUnload="" id="body-content">
+    <header class="header">
+        <h1 id="qiuz_header"><img id="imgs" src="image/logo.gif">QuizzieMania</h1>
+        <h1 id="general"> General Quiz Level-1</h1>
+        <h2 id="timings" style="color: rgb(0, 255, 0);" >Time</h2>
+    </header>
+    <div class="main-content">
 
-        </script>
-        <title>Welcome to QuizzieMania</title>
-    </head>
-    <body>
-        <header class="header">
-            <h1 id="qiuz_header">QuizzieMania - Skill_Up_Yourself</h1>
-        </header>
+        <section>
+            <h2>1.) Which Indian state was converted to union territory(UT) in the year 2020 ?</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q1"> Punjab</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q1"> Chattisgarh</input></label><br>
+           </p>
+           <p class="ques1">
+            <label><input type="radio"  class="q1" name="q1" id="q0"> Jammu and Kashmir</input></label><br>
+           </p>
+           <p class="ques1">
+            <label><input type="radio"  class="q1" name="q1"> Mizoram</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
 
-        <div class="main-content">
-            <img id="img" src="image/logo.gif" height="300px" width="300px"><br>
-            <button id="btn" onclick="func()">Sign Up</button><br>
-            <h3 class="des">Hello Student !</h3>
-            <h3 class="des">SignIn to our Page by</h3>
-            <h3 class="des">Clicking the above SignUp button</h3>
-            <h3>Score more than 75%</h3>
-            <h3>Get a Certificate from our Page</h3>
-            <h3>No Registration Fee</h3>
-            <h3>No Certificate Fee</h3>
-            <h3>Skill_Up_Yourself</h3>
-            <h3 style="color: blue;">Knowledge is Power- QuizzieMania</h3>
+        <section>
+            <h2>2.) Who is the richest person in India up to date?</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q2"> Ratan Tata</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q2" id="q1"> Mukesh Ambani</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q2"> Anil Ambani</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q2"> Sundar Pichai</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
+
+        <section>
+            <h2>3.) India has largest deposits of ____ in the world.</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q3"> Gold</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q3"> Copper</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q3"  id="q2"> Mica</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q3"> Silver</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
+
+        <section>
+            <h2>4.) Kathakali, Mohiniatam and Ottamthullal are the famous dances of____?</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q4" id="q3"> Kerala</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q4" > Karnataka</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q4"> Orissa</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q4"> Tamil Nadu</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
+
+        <section>
+            <h2>5.) Modern football is said to have evolved from ?</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q5"  id="q4"> England</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q5"> Brazil</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q5"> France</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q5"> Spain</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
+
+        <section>
+            <h2>6.) Modern Indo-Aryan languages are based on an ancient language called?</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q6"> Tamil</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q6" id="q5"> Sanskrit</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q6"> Hindi</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q6"> Malayalam</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
+
+        <section>
+            <h2>7.) Kiran Bedi is____ of India ?</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q7"> First Woman IAS Officer</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q7" > First Woman IRS Officer</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q7" id="q6"> First Woman IPS Officer</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q7"> First Woman Army General</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
+
+        <section>
+            <h2>8.) Normally the Commonwealth Games are held at intervals of____ .</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q8"> 3 years</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q8"> 2 years</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q8"> 5 years</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q8"  id="q7"> 4 years</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
+
+        <section>
+            <h2>9.) Mother Teresa won the Nobel Prize for Peace in ?</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q9"> 1980</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q9" id="q8"> 1979</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q9"> 1982</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q9"> 1978</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
+
+        <section>
+            <h2>10.) Most commonly used bleaching agent is ?</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q10"> Alcohol</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q10" > Sodium Chloride</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q10" id="q9"> Chlorine</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q10"> Carbon Dioxide</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
+
+        <section>
+            <h2>11.) Light Year is related to ?</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q11"> Energy</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q11"> Speed</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q11"> Intensity</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q11" id="q10"> Distance</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
+
+        <section>
+            <h2>12.) Nalanda is located at which Indian state?</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q12" id="q11"> Bihar</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q12"> Uttar Pradesh</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q12"> Maharashtra</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q12"> West Bengal</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
+
+        <section>
+            <h2>13.) Which is the largest rice producing state of India?</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q13"> Uttar Pradesh</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q13" id="q12"> West Bengal</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q13"> Maharashtra</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q13"> Tamil Nadu</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
+
+        <section>
+            <h2>14.) What is the Capital of Thailand ?</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q14"> Kuala Lumpur</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q14" id="q13"> Bangkok</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q14"> Singapore</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q14"> Taiwan</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
+
+        <section>
+            <h2>15.) Which is the longest river in the world in distance ?</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q15"> Ganga</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q15" > Amazon</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q15" id="q14"> Nile</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q15"> Missisipi</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
+
+        <section>
+            <h2>16.) Which country was the first to produce COVID-19 Vaccine ?</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q16"> China</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q16" > India</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q16"> United States of America</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q16" id="q15"> Russia</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
+
+        <section>
+            <h2>17.) Hyundai company is the origin of which country ?</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q17"> North Korea</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q17" id="q16"> South Korea</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q17"> Japan</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q17"> China</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
+
+        <section>
+            <h2>18.) Which of these below disease is caused by Mosquitoe bite ?</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q18"> Jaundice</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q18" > Cancer</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q18" id="q17"> Dengue</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q18"> Common-Cold</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
+
+        <section>
+            <h2>19.) Who is the founder of FaceBook ?</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q19" id="q18"> Mark Zuckerberg</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q19" > Warren Buffet</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q19"> Bill Gates</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q19"> Elon Musk</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
+
+        <section>
+            <h2>20.) In which year did the World War-2 ended ?</h2>
+            <span>
+            <p class="ques1">
+           <label><input type="radio" class="q1" name="q20"> 1914</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q20" > 1915</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q20"> 1947</input></label><br>
+           </p>
+           <p class="ques1">
+           <label><input type="radio"  class="q1" name="q20" id="q19"> 1945</input></label><br>
+           </p>
+           </span>
+        </section>
+        <br>
+        <br>
+
+        <div class="end">
+            <audio id="aud">
+                <source src="sound/alert.mp3" type="audio/mpeg">
+            </audio>
+            <span>
+                <h3 id="apt" onclick="accepted()"><input class="check" id="cheq" type="checkbox" >I have attended the test from my knowledge without any kind of MALPRACTICE</h3>
+            </span>
+            <button class="btn" onclick="func()">Submit test</button>
         </div>
-        
+    </div>
 
-        <audio id="aud">
-            <source src="sound/alert.mp3" type="audio/mpeg">
-        </audio>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <footer class="footer">
-            <h2 id="quiz_footer" >Score more than 75% and get a Valuable Certificate.</h2>
-        </footer>
-    </body>
+    <footer class="footer">
+        <h2 id="quiz_footer" >You are currently attending the Quiz</h2>
+        <h3 id="quiz_footer" >You should score atleast 75%</h3>
+    </footer>
+</body>
+<script src="javascript/javascript-quiz-start.js"></script> 
 </html>
