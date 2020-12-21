@@ -109,7 +109,6 @@ document.addEventListener("visibilitychange",function (){
 // Window Resized
 h=screen.availHeight;
 w=screen.availWidth;
-if(w>=500 || !(userAgentString.indexOf("Safari") > -1)){
 function resized(){
     document.getElementsByTagName("BODY")[0].style.display = "none";
     setTimeout(function(){
@@ -124,12 +123,6 @@ function resized(){
             window.open("quiz-reattend.html","_self","toolbar=no");
     }
     localStorage.setItem("resizing",resizing);
-}
-}
-else{
-    function resized(){
-        alert("wohooo");
-    }
 }
 
 window.onresize = resized;
